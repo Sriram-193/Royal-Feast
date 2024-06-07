@@ -1,0 +1,97 @@
+footer{
+    padding: 50px 50px;
+    overflow: hidden;
+    color:rgb(54, 54, 54);
+
+    background-image: url(../../assets/footer-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+footer h1{
+    margin-left: 10%;
+    font-size: 25px;
+    font-family: "Nunito", sans-serif;
+}
+footer h4{
+    font-size: 13px;
+}
+footer h2{
+    font-size: 20px;
+}
+.footer-item{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.footer-item div{
+    text-align: center;
+    margin: 10px 30px;
+    padding: 10px;
+}
+.footer-item p{
+    margin: 5px;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    color:rgb(54, 54, 54);
+}
+
+.footer-item p:hover{
+    text-decoration: underline;
+}
+footer hr{
+   border-style:none;
+   border-top-style: dotted;
+   width:50%;
+   border-width:7px;
+   border-color: rgb(66, 66, 66);
+   margin: 0px auto;
+}
+
+footer .copyrights{
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 13px;
+}
+
+footer .backToTop{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: #ff8c00;
+    position: absolute;
+    right: 50px;
+}
+
+footer .backToTop a{
+    color: black;
+    cursor: pointer;
+}
+@media screen and (max-width:720px) {
+.footer-item{
+    flex-direction: column;
+}
+footer h1{
+    text-align: center;
+}
+}
+@media screen and (max-width:850px) {
+    footer h1{
+        font-size: 25px;
+    }
+footer h2{
+    font-size: 20px;
+}
+.footer-item h4{
+    font-size: 12px;
+}
+.footer-item p{
+    font-size: 12px;
+    padding: 5px;
+}
+
+footer .copyrights{
+    font-size: 13px;
+}
+}

@@ -1,0 +1,133 @@
+.review h2{
+    text-align: center;
+    font-size: 25px;
+}
+.review{
+    overflow: hidden;
+    width: 90%;
+    margin: 30px auto;
+}
+.review-desc{
+    width: 70%;
+    margin: 15px auto;
+    text-align: center;
+    line-height: 2;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 10px;
+}
+
+.card {
+    height: 180px;
+    overflow-y: scroll;
+    margin: 10px;
+    width: 20%;
+    box-shadow: 1px 1px 10px 1px lightgray;
+    padding: 15px;
+    border-radius: 30px;
+    border-bottom: orange 5px solid;
+}
+.card p{
+    font-size: 15px;
+}
+.card:hover{
+    border-bottom: rgb(255, 196, 87) 5px solid;
+}
+.card h3{
+    font-size: 15px;
+    margin: 15px 0;
+}
+.card::-webkit-scrollbar {
+    display: none;
+}
+
+.addBtn{
+    text-align: center;
+}
+.addBtn button{
+    padding: 8px 15px;
+    background-color: rgb(255, 184, 53);
+    border: none;
+    cursor: pointer;
+}
+
+.form{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    padding: 40px 10px;
+    width: 60%;
+    box-shadow: 1px 1px 20px 1px rgb(117, 117, 117);
+    margin: 10px auto;
+    transform: scale(0);
+    transition: 500ms; 
+    position: fixed;
+    top: 150px;
+    left: 20%;
+    height: 30vh;
+    z-index: 1;
+
+}
+.form i{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.showForm{
+    transform: scale(1);
+}
+.form input{
+    margin-top: 10px;
+    padding: 15px 10px;
+    outline: none;
+    border: none;
+    width: 60%;
+    background-color: rgb(235, 235, 235);
+}
+.form input:focus{
+    border-bottom: 1px solid black;
+}
+
+.form button{
+    margin: 10px 5px;
+        padding: 8px 15px;
+        background-color: rgb(255, 184, 53);
+        border: none;
+        cursor: pointer;
+  
+}
+
+@media only screen and (max-width:850px) {
+    .card {
+        height: 170px;
+        margin: 10px;
+        width: 40%;
+        padding: 20px;
+   }
+   
+    .card p{
+        font-size: 13px;
+    } 
+    .form{
+        width: 80%;
+        left: 10%;
+        padding: 40px 10px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .card h3{
+        font-size: 15px;
+    }
+    .card p{
+        font-size: 10px;
+    }
+}
