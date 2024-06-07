@@ -39,7 +39,7 @@ const Header = () => {
 
      <div className='header-log'>
      
-     <h1>Welcome to Royal Feast </h1>
+     <h1>Welcome to Roya Feast </h1>
 
 <div className='align-line'>
   
